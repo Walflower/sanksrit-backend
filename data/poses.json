@@ -45,7 +45,7 @@
         "sanskrit_name": "bhujangasana",
         "hint_1": "1 word, 12 characters",
         "hint_2": "bhujang _ _ _ _ _",
-        "photo": "cobrapose.png",
+        "photo": "http://localhost:8080/public/cobra.jpeg",
         "description": "The cobra pose stretches the chest, shoulders, and abdomen, while strengthening the spine and improving posture.",
         "tips": "Lie on your stomach with your legs extended and the tops of your feet on the floor. Place your hands under your shoulders, keeping your elbows close to your body. Press into your hands and lift your chest off the ground, while keeping your pelvis and lower body grounded. Hold the pose, breathing deeply."
     },
