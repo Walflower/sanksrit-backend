@@ -2,26 +2,22 @@ const express = require("express");
 const router = express.Router();
 const fs = require("fs");
 
+//randomizing the array
 function shuffle(inputArray) {
   let oldArray = [...inputArray];
   let newArray = [];
 
   while (oldArray.length > 0) {
-    // pick a random number from 0 to array.length-1
     const randomIndex = Math.floor(Math.random() * oldArray.length);
 
-    // use random number as index - get item from old array
     const randomItem = oldArray[randomIndex];
 
-    // Remove it
     const array3 = oldArray.slice(0, randomIndex);
     const array4 = oldArray.slice(randomIndex + 1);
     oldArray = array3.concat(array4);
 
-    // Add removed item to a new array
     newArray.push(randomItem);
   }
-  // return new array
   return newArray;
 }
 
