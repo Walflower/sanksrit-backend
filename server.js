@@ -13,6 +13,7 @@ app.route("/").get((_req, res) => {
   res.json("Welcome to my API");
 });
 
+app.use("/public", express.static("public"));
 app.use("/poses", posesRoute);
 
 const PORT = process.env.PORT || 8000;
