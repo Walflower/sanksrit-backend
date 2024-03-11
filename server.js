@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 
 app.route("/").get((_req, res) => {
-  res.json("Welcome to my API");
+  res.json("Express on Vercel");
 });
 
 app.use("/public", express.static("public"));
@@ -20,3 +20,5 @@ const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
+
+module.exports = app;
