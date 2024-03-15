@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const fs = require("fs");
+const path = require("path");
 
 //randomizing the array
 function shuffle(inputArray) {
@@ -23,7 +24,7 @@ function shuffle(inputArray) {
 
 router.route("/").get((req, res) => {
   try {
-    const posesData = JSON.parse(fs.readFileSync("./data/poses.json"));
+    const posesData = JSON.parse(fs.readFileSync(path.resolve(__dirname, “..”, “data”, “poses.json”)));
     const shuffledPoses = shuffle(posesData);
 
     return res.status(200).json(shuffledPoses);
