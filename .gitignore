@@ -1,3 +1,9 @@
 /node_modules
 .env
-.vercel
+
+#https://git-scm.com/docs/gitignore#_examples see bottom example to making subdirectories accessible 
+.vercel/*
+!.vercel/output
+.vercel/output/*
+!.vercel/output/static
+
